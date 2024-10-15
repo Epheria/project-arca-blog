@@ -1,10 +1,18 @@
 ---
 layout: post
-title:  Maths Example with Mathjax
-date:   2021-06-16 22:57:49 +0000
-categories: jekyll update
+title:  "project arca"
+description: 
+date: 2024-07-15 09:29:20 +0700
+tag: "project"
+categories: project
+project_id: proj_01
 usemathjax: true
+img: "/posts/images/project/projectarcathumbnail.png"
 ---
+
+<figure>
+    <img class="title-image" src="{{site.image_location}}/project/projectarcathumbnail.png" alt="title img">
+</figure>
 
 Below is an example of maths using mathjax. 
 

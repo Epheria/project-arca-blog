@@ -1,5 +1,5 @@
 ---
-title: Colophon
+title: About
 permalink: /about/
 layout: page
 excerpt: Developers who love pixels and make games.
@@ -8,8 +8,10 @@ image: /assets/img/avatar.jpg
 ---
 
 <figure>
-<img src="{{ page.image }}" alt="profile image" width="60%">
-<figcaption></figcaption>
+    <div class="special-container">
+        <img class="special-img" src="{{ site.baseurl }}{{ page.image }}" alt="profile image">
+    </div>
+    <figcaption></figcaption>
 </figure>
 
 Developers who love pixels and make games.

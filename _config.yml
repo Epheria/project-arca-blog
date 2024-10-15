@@ -24,8 +24,10 @@ author:
 # URL settings
 url: "https://github.com/Epheria/project-arca-blog" #
 baseurl: ""
-permalink: /:title/
+permalink: /:categories/:title
 google_analytics: # leave it blank if not wish
+image_location: /posts/images
+file_location: /posts/files
 fb_appid:
 
 # Collection setting
