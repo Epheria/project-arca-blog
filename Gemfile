@@ -10,6 +10,11 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.1.0"
 
+# Additional Gems required for Ruby 3.4.0+ compatibility
+gem 'csv'        # For handling CSV files
+gem 'base64'     # For base64 encoding and decoding
+gem 'bigdecimal' # For high-precision decimal arithmetic
+
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
