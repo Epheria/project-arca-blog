@@ -8,6 +8,9 @@ categories: project
 project_id: proj_01
 usemathjax: true
 img: "/posts/images/project/arcathumb.png"
+sitemap :
+  changefreq : daily
+  priority : 1.2
 ---
 
 <figure>
