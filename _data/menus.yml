@@ -1,16 +1,20 @@
-- title: home
+- title: Home
   url: /
   external: false
 
-- title: archive
-  url: /archive/
+- title: Dev Log
+  url: /devlog/
   external: false
 
-- title: project
+- title: Project
   url: /project/
   external: false
+  
+- title: Art Works
+  url: /art/
+  external: false
 
-- title: about
+- title: About
   url: /about/
   external: false # set true if you using external link, see below
 

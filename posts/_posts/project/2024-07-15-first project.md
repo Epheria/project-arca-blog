@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "project arca"
+title:  "Project Arca"
 description: 
 date: 2024-07-15 09:29:20 +0700
 tag: "project"
 categories: project
 project_id: proj_01
 usemathjax: true
-img: "/posts/images/project/projectarcathumbnail.png"
+img: "/posts/images/project/arcathumb.png"
 ---
 
 <figure>
