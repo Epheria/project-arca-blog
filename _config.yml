@@ -26,7 +26,7 @@ author:
 url: "https://github.com/Epheria/project-arca-blog" #
 baseurl: ""
 permalink: /:categories/:title
-google_analytics: # leave it blank if not wish
+google_analytics: G-6ZNWSXHMPQ # leave it blank if not wish
 image_location: /posts/images
 file_location: /posts/files
 fb_appid:
