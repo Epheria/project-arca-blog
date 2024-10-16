@@ -7,6 +7,7 @@ timezone: Asia/Seoul # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/Epheria/project-arca-blog # site repo [optional]
 mode: dark # default theme "dark" | "light"
+google_site_verification: WsppNpnQVFxs4WxAyPv3lHalDyiTSvZ1qoT8OSrubeg
 
 # Profile settings
 author:
