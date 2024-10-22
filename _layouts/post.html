@@ -73,11 +73,16 @@ layout: compress
           {% endif %}
         </div>
       </article>
-    
+
+      <!-- 모달 구조 추가 -->
+      <div id="myModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="expandedImg" alt="Expanded Image">
+        <div id="modal-caption"></div>
+      </div>
+
       {% if page.comments %}
         {% include comments.html %}
       {% endif %}
-
     </main>
 
     {% if page.modified %}
@@ -89,6 +94,29 @@ layout: compress
 
     {% include footer.html %}
   </div>
+
+  <script>
+    // 모달 기능 JavaScript
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("expandedImg");
+    const captionText = document.getElementById("modal-caption");
+
+    // 페이지의 모든 이미지에 대해 클릭 이벤트 등록
+    document.querySelectorAll("img").forEach(img => {
+      if (img.className !== "modal-content" && img.parentElement.tagName !== "A") {
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;  // 클릭된 이미지의 src를 모달에 설정
+          captionText.innerHTML = this.alt;  // 이미지의 alt를 캡션에 표시
+        };
+      }
+    });
+
+    // 모달 클릭 시 닫기
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
