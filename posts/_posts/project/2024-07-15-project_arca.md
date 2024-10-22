@@ -13,29 +13,33 @@ sitemap :
   priority : 1.2
 ---
 
+> Project start date : 2024-07-21
+
 <figure>
     <img class="title-image" src="{{site.image_location}}/project/projectarcathumbnail.png" alt="title img">
 </figure>
 
-Below is an example of maths using mathjax. 
+<figure>
+    <a href="{{site.image_location}}/project/projectarcathumbnail.png" target="_blank">
+        <img class="title-image" src="{{site.image_location}}/project/projectarcathumbnail.png" alt="title img">
+    </a>
+</figure>
 
-Any page needing maths should start with the frontmatter:
-{% highlight markdown %}
-usemathjax: true
-{% endhighlight %}
+<figure>
+    <div class="special-container">
+        <img class="special-img" src="{{site.image_location}}/devlogs/jump.gif" alt="thumbnail img">
+    </div>
+</figure>
 
-$$ 
-\begin{align*}
-y = y(x,t) &= A e^{i\theta} \\
-&= A (\cos \theta + i \sin \theta) \\
-&= A (\cos(kx - \omega t) + i \sin(kx - \omega t)) \\
-&= A\cos(kx - \omega t) + i A\sin(kx - \omega t)  \\
-&= A\cos \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big) + i A\sin \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big)  \\
-&= A\cos \frac{2\pi}{\lambda} (x - v t) + i A\sin \frac{2\pi}{\lambda} (x - v t)
-\end{align*}
-$$
+<figure>
+    <img class="title-image" 
+         src="{{site.image_location}}/project/projectarcathumbnail.png" 
+         alt="title img" 
+         onclick="openModal(this)">
+</figure>
 
-Inline maths can be written with the `\\(` and `\\)` characters, producing inline maths
-such as \\(\delta(t) \xrightarrow{\mathscr{F}} 1\\).
-
-The above is accomplished with thanks to [Alan Duan](https://alanduan.me/random/mathjax/) and [Zichen Vincent Zhang](https://webdocs.cs.ualberta.ca/~zichen2/blog/coding/setup/2019/02/17/how-to-add-mathjax-support-to-jekyll.html.).
+<!-- 모달 구조 -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <img class="modal-content" id="expandedImg" alt="Expanded Image">
+    <div id="modal-caption"></div>
+</div>

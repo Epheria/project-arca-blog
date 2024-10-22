@@ -1,7 +1,8 @@
 body[data-theme="dark"] {
+  color-scheme: dark;
   color: $dark-text-base-color;
   background-color: $dark-black;
-
+  //background-image: url('/myblog/assets/img/bg_img.png');
   // Heading
   h1,
   h2,
@@ -242,6 +243,54 @@ body[data-theme="dark"] {
       &::-webkit-input-placeholder {
         color: rgba(128,128,128,0.8);
       }
+    }
+  }
+
+  .related-diary {
+    outline: solid 2px #2f2f2f;
+  }
+
+  #study-list {
+    pre {
+      background-color: #1A1B21;
+      border-color: #808080;
+    }
+    .back {
+      background-color: $dark-text-link-blue;
+      color:black;
+      &:hover{
+        background-color: $dark-text-link-blue-active;
+      }
+    }
+  }
+
+  .wave-player {
+    background-color: black;
+    div.audioTrack{
+      div.audioCanvasDiv{
+        canvas {
+          --active-color: #ff5277;
+          --temp-color: #8f2e43;
+          --current-color: #ff2957;
+          color: rgb(230,230,230);
+        }
+      }
+    }
+    div.audioButtonDiv{
+      button {
+        img.buttonIcon {
+          --img-file-play: dark-play-solid.svg;
+          --img-file-pause: dark-pause-solid.svg;
+          fill: white;
+        }
+        background-color: black;
+      }
+    }
+  }
+
+  .diary-checkbox {
+    input {
+      accent-color: $dark-text-link-blue;
     }
   }
 }
